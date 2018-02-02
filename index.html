@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vyble</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-orange.min.css" />
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="804946057405-b1n4gpjejifrqka5rqf6mjmfe4e0aaud.apps.googleusercontent.com">
+</head>
+<body>
+    
+<dialog id="dlog" class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Sign in</h4>
+     
+    <div class="mdl-dialog__content">
+        
+        
+        <p id="error">jj</p>
+ <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="emaillogin">
+    <label class="mdl-textfield__label" for="sample3">Email...</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="password" id="passwordlogin">
+    <label class="mdl-textfield__label" for="sample3">Password...</label>
+      
+  </div>
+        
+    </div>
+    <div class="mdl-dialog__actions">
+    <!-- Accent-colored raised button with ripple -->
+        
+<!-- Accent-colored raised button -->
+<button id="btn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+  sign in
+</button>
+       
+        <!-- MDL Spinner Component -->
+<div id="logprog" class="mdl-spinner mdl-js-spinner is-active"></div>
+
+
+    </div>
+    <img id="googlebtn" src="img/btn_google_signin_normal.png" alt="googlebutton">
+      
+  </dialog>
+
+    
+    
+    
+    
+    <div class="logincover">
+    
+     <!-- MDL Spinner Component -->
+       <div class="mdl-spinner mdl-js-spinner is-active"></div>
+  </div>
+    
+
+    
+    
+    
+    
+    
+    <div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout-icon"></div>
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout__title">Vyble</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <!-- Raised button with ripple -->
+<button id="outbtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+  Sign Out <i class="material-icons">account_box</i>
+</button>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+  </div>
+</div>
+    
+    
+    <script src="https://apis.google.com/js/platform.js" async defer>
+</script>
+    
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCYABJrwmRr_E7YMwWQhTIOsYxUu0KpWZA",
+    authDomain: "wyble-12997.firebaseapp.com",
+    databaseURL: "https://wyble-12997.firebaseio.com",
+    projectId: "wyble-12997",
+    storageBucket: "",
+    messagingSenderId: "804946057405"
+  };
+  firebase.initializeApp(config);
+</script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
